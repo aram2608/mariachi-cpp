@@ -1,7 +1,7 @@
 
 class Position {
-    public:
-        int idx;
+  public:
+    int idx;
 
-        void advance(char&);
+    void advance(char &);
 };

@@ -1,7 +1,12 @@
 
-enum class Type {INT, PLUS, MINUS};
+enum class Type { INT, PLUS, MINUS, EOF };
 
 class Token {
-    private:
+  private:
+    Token(int value, int pos_start);
+    ~Token();
+
     Type type;
+    int  value;
+    int  pos_start;
 };

@@ -7,11 +7,10 @@ Lexer::Lexer(string code) {
 
 // Deconstructor
 Lexer::~Lexer() {
-
 }
 
 void Lexer::tokenize() {
-    cout << code << endl; 
+    cout << code << endl;
 }
 
 void Lexer::advance() {
