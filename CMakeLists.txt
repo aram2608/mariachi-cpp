@@ -8,6 +8,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(${PROJECT_NAME} 
     mariachi/src/main.cpp
+    mariachi/src/lexer.cpp
 )
 
-target_include_directories(${PROJECT_NAME} PRIVATE mariachi/src)
+target_include_directories(${PROJECT_NAME} PRIVATE mariachi/include)
