@@ -15,7 +15,7 @@ class Lexer {
     ~Lexer();
 
     // Tokenize input
-    vector<Token> tokenize();
+    void tokenize();
 
     // Function to add tokens
     void add_tok(const Type tt, const std::string& value);

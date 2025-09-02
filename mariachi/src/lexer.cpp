@@ -9,6 +9,10 @@ Lexer::Lexer(string code) {
 Lexer::~Lexer() {
 }
 
+void Lexer::tokenize() {
+    cout << code << endl;
+}
+
 bool Lexer::is_end() {
     return current >= code.size();
 }
