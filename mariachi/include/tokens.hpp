@@ -2,7 +2,7 @@
 enum class Type { INT, PLUS, MINUS, EOF_ };
 
 class Token {
-  private:
+  public:
     Token(Type type, int value, int pos_start);
     ~Token();
 

@@ -9,8 +9,8 @@ Lexer::Lexer(string code) {
 Lexer::~Lexer() {
 }
 
-vector<Token> Lexer::tokenize() {
-    cout << code << endl;
+bool Lexer::is_end() {
+    return current >= code.size();
 }
 
 char Lexer::advance() {

@@ -17,6 +17,18 @@ class Lexer {
     // Tokenize input
     vector<Token> tokenize();
 
+    // Function to add tokens
+    void add_tok(const Type tt, const std::string& value);
+
+    // Test to check for numbers
+    bool is_num(const char c) const;
+
+    // Function to handle numbers
+    void number();
+
+    // Test to see if we are at the end of the string
+    bool is_end();
+
     string code;
     size_t current;
 
