@@ -1,8 +1,12 @@
 #include <iostream>
+#include <vector>
+#include <string>
+#include "tokens.hpp"
 
 using std::cout;
 using std::endl;
 using std::string;
+using std::vector;
 
 class Lexer {
   public:
@@ -11,11 +15,12 @@ class Lexer {
     ~Lexer();
 
     // Tokenize input
-    void tokenize();
+    vector<Token> tokenize();
 
     string code;
+    size_t current;
 
   private:
-    // Advances to next token
-    void advance();
+    // Advances to next token and get character
+    char advance();
 };

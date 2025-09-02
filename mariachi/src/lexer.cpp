@@ -9,9 +9,11 @@ Lexer::Lexer(string code) {
 Lexer::~Lexer() {
 }
 
-void Lexer::tokenize() {
+vector<Token> Lexer::tokenize() {
     cout << code << endl;
 }
 
-void Lexer::advance() {
+char Lexer::advance() {
+    ++current;
+    return code[current - 1];
 }
